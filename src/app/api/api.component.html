@@ -1,0 +1,9 @@
+<h2> Hello from API Component </h2>
+<!-- For the message from the root html app.component.html file to appear under this component
+     on browser, one has to use ng-content as shown below 
+-->
+<ng-content select="h3"></ng-content>
+
+<!-- display the input received from the parent component -->
+<h2> Display the input coming form the parent component </h2>
+<h3> Name of my school is  {{school}}  </h3>

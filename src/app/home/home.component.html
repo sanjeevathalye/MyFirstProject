@@ -1,0 +1,16 @@
+<h2>
+    Welcome from Home Component!
+</h2>
+<!-- This demonstrates the use of Angular interpolation and Angular property binding -->
+<!-- Property binding works for non-string value, for example bookean flag but interploation does not work for non-string value -->
+Interpolation <input type="text" value={{firstName}} id=text1 disabled={{flag}}  />
+<br>
+<br>
+Property Binding <input type="text" [value]='lastName' id=text2 [disabled]='flag' />
+
+<!-- Use of style binding -->
+<h2 [style.color] = "color"> This is an example of style binding</h2>
+<div [style.font-size.px]="20" > The size of the font is 20 </div>
+<!-- use of style binding using boolean  -->
+<div [style.font-size.px]="24" [style.color]="param? 'green' : 'red'" > Hello with param (green or red) </div>
+

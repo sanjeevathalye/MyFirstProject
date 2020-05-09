@@ -1,0 +1,33 @@
+
+<!-- This demonstrates the use of event binding -->
+
+<h2> Student Data</h2>
+
+<table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email Id</th>
+      <th>ID</th>
+    </tr>
+    <tr *ngIf='hide'>
+      <td> {{firstName}} </td>
+      <td> {{lastName}} </td>
+      <td> {{mailID}} </td>
+      <td>50</td>
+    </tr>
+</table>
+<br>
+<button (click)='show()'>Show Details</button>
+
+<!-- How to declare a variable in the HTML template and how to pass it from html to Typescript function-->
+<br><br>
+<input #myInput type="text"(keyup.enter)="onClick(myInput)" placeholder="Enter a value" >
+<!-- You can also use this variable for a later use in passing to another function -->
+<button (click)="display(myInput)">Display it</button>
+<p></p>
+<!-- Demonstration of two-way binding -->
+First Name <input [(ngModel)]='firstName' type="text" required >
+<p> Your First Name: {{firstName}}   </p>
+
+
