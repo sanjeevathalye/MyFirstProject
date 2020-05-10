@@ -349,7 +349,11 @@
    -->
    <h3> This message is from the root component app </h3>
   
- 
+<app-dataout (childData)="message=$event"></app-dataout> 
+  <div><br>
+    Message received from the child component dataout is {{message}}
+    
+  </div>
  <!--
   <app-home></app-home>
   
