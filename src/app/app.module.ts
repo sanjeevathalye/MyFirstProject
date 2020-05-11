@@ -11,6 +11,7 @@ import { DataoutComponent } from './dataout/dataout.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { EvenPipe } from './pipes/pipe/even.pipe';
+import { OddPipe } from './pipes/pipe/odd.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EvenPipe } from './pipes/pipe/even.pipe';
    DataoutComponent,
    DirectivesComponent,
    PipesComponent,
-   EvenPipe
+   EvenPipe,
+   OddPipe
    ],
 
   imports: [
