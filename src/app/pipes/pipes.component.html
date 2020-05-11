@@ -1,0 +1,44 @@
+<div style="text-align: center">
+    <h1> Pipes: Allow you to transform the data before display </h1>
+</div>
+<h2> Hello, my name is {{myName}} </h2>
+<h2> Hello, my name is {{ myName | lowercase }} </h2>
+<h2> Hello, my name is {{ myName | uppercase }} </h2>
+<h2> Hello, my name is {{ myName | titlecase }} </h2>
+<h2> Hello, my name is {{ myName | slice:3:7 }} </h2>
+<br>
+<h2> Playing with Numbers </h2>
+<h3> {{ 5.678 | number:'1.2-3'}} </h3>
+<h3> {{ 5.678 | number:'3.1-2'}} </h3>
+
+<h3> Percentage </h3>
+<h3> {{ 5.678 | percent}} </h3>
+
+<h3> Currency </h3>
+<h3> {{ 123 | currency}} </h3>
+<h3> {{ 123.456 | currency}} </h3>
+<h3> {{ 123 | currency:'GBP'}} </h3>
+
+<h3> Date </h3>
+<h3> Date in full format : {{myDate}} </h3>
+<h3> Date in short format: {{myDate | date:'shortDate'}} </h3>
+<h3> Time in short format: {{myDate | date:'shortTime'}} </h3>
+
+<h2> Some more examples of Pipe</h2>
+<h3> using slice: My first name is {{myName | slice: 0:8 }} </h3>
+<h2> Using json to display the value of the element of an object</h2>
+<h3> {{ student }} </h3>
+<h3> {{ student | json }} </h3>
+<h2> Using number to display a big number in proper format using commas after every 3 digits from the right </h2>
+<h3> {{ bigNumber | number }} </h3>
+
+<!-- example of custom pipe -->
+<h2> Example of custom pipe "even" </h2>
+<h3 *ngFor="let elem of myArray | even">
+    {{ elem }}
+</h3>
+
+<h2> Example of custom pipe "odd" </h2>
+<h3 *ngFor="let elem of myArray | odd">
+    {{ elem }}
+</h3>

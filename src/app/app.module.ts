@@ -9,8 +9,9 @@ import { BinderComponent } from './binder/binder.component';
 import { ApiComponent } from './api/api.component';
 import { DataoutComponent } from './dataout/dataout.component';
 import { DirectivesComponent } from './directives/directives.component';
-
-
+import { PipesComponent } from './pipes/pipes.component';
+import { EvenPipe } from './pipes/pipe/even.pipe';
+import { OddPipe } from './pipes/pipe/odd.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,11 @@ import { DirectivesComponent } from './directives/directives.component';
    ApiComponent,
    DataoutComponent,
    DirectivesComponent,
+   PipesComponent,
+   EvenPipe,
+   OddPipe
    ],
+
   imports: [
     BrowserModule, FormsModule
   ],
