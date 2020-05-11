@@ -31,3 +31,9 @@
 <h3> {{ student | json }} </h3>
 <h2> Using number to display a big number in proper format using commas after every 3 digits from the right </h2>
 <h3> {{ bigNumber | number }} </h3>
+
+<!-- example of custom pipe -->
+<h2> Example of custom pipe "even" </h2>
+<h3 *ngFor="let elem of myArray | even">
+    {{ elem }}
+</h3>

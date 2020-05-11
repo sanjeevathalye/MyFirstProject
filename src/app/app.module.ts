@@ -10,6 +10,7 @@ import { ApiComponent } from './api/api.component';
 import { DataoutComponent } from './dataout/dataout.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EvenPipe } from './pipes/pipe/even.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { PipesComponent } from './pipes/pipes.component';
    DataoutComponent,
    DirectivesComponent,
    PipesComponent,
+   EvenPipe
    ],
+
   imports: [
     BrowserModule, FormsModule
   ],
