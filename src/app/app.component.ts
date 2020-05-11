@@ -11,6 +11,7 @@ export class AppComponent implements AfterViewInit{
   @ViewChild('pizzaTop') pizzaTopping: ElementRef ;
 
   title = 'myFirstProject';
+  message = '';
 
   // the following variable will be passed to the child component api to display there
   mySchool = 'Pune University';

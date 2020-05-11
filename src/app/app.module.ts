@@ -7,6 +7,7 @@ import { CourseComponent } from './course.component';
 import { HomeComponent } from './home/home.component';
 import { BinderComponent } from './binder/binder.component';
 import { ApiComponent } from './api/api.component';
+import { DataoutComponent } from './dataout/dataout.component';
 
 
 
@@ -17,6 +18,7 @@ import { ApiComponent } from './api/api.component';
    HomeComponent,
    BinderComponent,
    ApiComponent,
+   DataoutComponent,
    ],
   imports: [
     BrowserModule, FormsModule
