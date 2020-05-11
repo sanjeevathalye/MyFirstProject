@@ -1,0 +1,53 @@
+.IN {
+    color: orange;
+    width: 100% ;
+    font-family: arial;
+    padding: 2px;
+}
+
+.UK {
+    color: red;
+    width: 100% ;
+    font-family: arial;
+    padding: 2px;
+}
+
+.PAK {
+    color: green;
+    width: 100% ;
+    font-family: arial;
+    padding: 2px;
+}
+
+.USA {
+    color: blue;
+    width: 100% ;
+    font-family: arial;
+    padding: 2px;
+}
+
+.other {
+    color: black;
+    width: 100% ;
+    font-family: arial;
+    padding: 2px;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px, solid black;
+}
+td, th {
+    border: 1px, solid black;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    background-color: lightblue;
+    color: white;
+}

@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { BinderComponent } from './binder/binder.component';
 import { ApiComponent } from './api/api.component';
 import { DataoutComponent } from './dataout/dataout.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 
@@ -19,6 +20,7 @@ import { DataoutComponent } from './dataout/dataout.component';
    BinderComponent,
    ApiComponent,
    DataoutComponent,
+   DirectivesComponent,
    ],
   imports: [
     BrowserModule, FormsModule

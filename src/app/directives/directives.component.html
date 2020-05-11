@@ -1,0 +1,51 @@
+<!-- This is to demonstrate the use of Angular structural directives -->
+
+<h2> Angular Directives </h2> 
+
+<!-- ngIf directive -->
+<div *ngIf=flag> This is the course titled Angular </div>
+<button (click)='toggle()'> {{flag? 'Hide ': 'Show'}} Course Name </button>
+
+<!-- ngSwitch directive -->
+<h3> List of persons and their countries in the colors according to their countries</h3>
+<div *ngFor='let item of persons'>
+    <ul [ngSwitch]='item.country'>
+        <li *ngSwitchCase="'India'" class='IN'>
+            {{item.name}} {{item.country}}
+        </li>
+
+        <li *ngSwitchCase="'Pakistan'" class='PAK'>
+            {{item.name}} {{item.country}}
+        </li>
+
+        <li *ngSwitchCase="'USA'" class='USA'>
+            {{item.name}} {{item.country}}
+        </li>
+
+        <li *ngSwitchCase="'UK'" class='UK'>
+            {{item.name}} {{item.country}}
+        </li>
+
+        <li *ngSwitchDefault>
+            {{item.name}} {{item.country}}
+        </li>
+    </ul>
+</div>
+<!-- ngFor directive -->
+<h3> List of Employees</h3>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Role</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let item of employees'>
+            <td> {{item.id}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.gender}} </td>
+            <td> {{item.role}} </td>
+        </tr>
+    </tbody>
+</table>
