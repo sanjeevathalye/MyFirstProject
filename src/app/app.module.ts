@@ -9,8 +9,7 @@ import { BinderComponent } from './binder/binder.component';
 import { ApiComponent } from './api/api.component';
 import { DataoutComponent } from './dataout/dataout.component';
 import { DirectivesComponent } from './directives/directives.component';
-
-
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +20,7 @@ import { DirectivesComponent } from './directives/directives.component';
    ApiComponent,
    DataoutComponent,
    DirectivesComponent,
+   PipesComponent,
    ],
   imports: [
     BrowserModule, FormsModule
